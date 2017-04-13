@@ -2,7 +2,11 @@ package example;
 
 public class Method {
 
-    public void use() {
+    public void use(String unused, final String used) {
+        if ("MAYBE".equals(used)) {
+            unused = "1234";
+        }
+
         used();
     }
 
